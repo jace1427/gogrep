@@ -14,6 +14,7 @@ type Options struct {
 	ShowLineNumber bool
 	InvertMatch    bool
 	Color          bool
+	Recursive      bool
 }
 
 func NewCommand() (*Options, error) {
@@ -23,6 +24,7 @@ func NewCommand() (*Options, error) {
 	showLineNumber := fs.Bool("n", false, "Print line number with output lines")
 	invertMatch := fs.Bool("v", false, "Select non-matching lines")
 	color := fs.Bool("c", true, "Print in color")
+	recursive := fs.Bool("r", false, "Search all subdirectories recursively")
 
 	// Parse flags
 	err := fs.Parse(os.Args[1:])
@@ -65,6 +67,7 @@ func NewCommand() (*Options, error) {
 		ShowLineNumber: *showLineNumber,
 		InvertMatch:    *invertMatch,
 		Color:          *color,
+		Recursive:      *recursive,
 	}
 
 	return opts, nil
