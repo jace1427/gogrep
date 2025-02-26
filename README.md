@@ -23,9 +23,8 @@ Build:
 
 Then run:
 
-`$ ./gogrep -n Romeo shakespeare.txt`
-
 ```txt
+$ ./gogrep -n Romeo shakespeare.txt
 shakespeare.txt:95854:  Romeo, son to Montague.
 shakespeare.txt:95856:  Mercutio, kinsman to the Prince and friend to Romeo.
 shakespeare.txt:95857:  Benvolio, nephew to Montague, and friend to Romeo
