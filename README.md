@@ -3,7 +3,7 @@
 ## Usage
 
 ```txt
-Usage of gogrep:
+Usage: ./gogrep [OPTIONS] PATTERN PATHS..
   -c    Print in color (default true)
   -i    Ignore case distinctions
   -n    Print line number with output lines

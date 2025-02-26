@@ -29,6 +29,7 @@ func NewCommand() (*Options, error) {
 	// Parse flags
 	err := fs.Parse(os.Args[1:])
 	if err != nil {
+		fmt.Println("Usage: gogrep [OPTIONS] PATTERN PATH...")
 		return nil, err
 	}
 
