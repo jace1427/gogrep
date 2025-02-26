@@ -1,5 +1,8 @@
 # GoGrep
 
-## Todo
+Usage of gogrep:
 
-- [ ] Add options struct
+- c Print in color (default true)
+- i Ignore case distinctions
+- n Print line number with output lines
+- v Select non-matching lines
